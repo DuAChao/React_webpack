@@ -1,0 +1,289 @@
+//@import "../index/sass/common";
+@media screen and (min-width: 960px){
+  .index{
+    background: url("../../../images/login/loginbg3.png") no-repeat center center;
+    background-size: cover;
+    height: -moz-calc(100% - 100px);
+    height: -webkit-calc(100% - 100px);
+    height:calc(100% - 100px);
+    .logincont{
+      width:500px;
+      border-radius: 3px;
+      box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.18);
+      position: absolute;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      z-index:3;
+    }
+    .cont_title{
+      text-align: center;
+    }
+    .cont_ipt{
+      padding:54px;
+      ._ipt{
+        height:48px;
+        .ipt{
+          line-height:1.5;
+        }
+        .IptTips{
+          top:12px;
+        }
+        .closeIcon{
+          display: none;
+        }
+      }
+      ._ipt_out{
+        margin-bottom: 40px;
+      }
+    }
+    .loginfooter{
+      display: block;
+    }
+  }
+
+}
+@media screen and (max-width: 960px){
+  .index{
+    //height: 100%;
+    background: #fff;
+    .logincont{
+      width:100%;
+      border-radius: 0;
+      box-shadow: none;
+      position: relative;
+      z-index:3;
+    }
+    .cont_title{
+      text-align: center;
+    }
+    .cont_ipt{
+      padding:54px 20px;
+      ._ipt{
+        height:56px;
+        .ipt{
+          line-height:1.5;
+        }
+        .IptTips{
+          top:17px;
+        }
+        .closeIcon{
+          display: block;
+        }
+      }
+      ._ipt_out{
+        margin-bottom: 20px;
+      }
+    }
+    .loginfooter{
+      display: none;
+    }
+  }
+}
+
+
+.index{
+  width:100%;
+  position: relative;
+  .logincont{
+    background: #fff;
+  }
+  .cont_title{
+    height:100px;
+    line-height:100px;
+    padding: 0 20px;
+    font-size: 18px;
+    position: relative;
+    h1{
+      font-weight: 300;
+      color: #13161B;
+      font-size: 1.5em;
+      i{
+        color: #49A9EE;
+        font-size: 1.5em;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 12px;
+      }
+    }
+  }
+  .cont_ipt{
+    position: relative;
+    .loginError{
+      position: absolute;
+      top: 8px;
+      left: 55px;
+      font-size: 16px;
+      color: #f44336;
+      i{
+        color: #e4393c;
+        margin-right:6px;
+      }
+    }
+    .cont_ipt_error:after{
+      content: '';
+      display: inline-block;
+      width:0;
+      height:100%;
+      vertical-align: middle;
+    }
+    ._ipt_out{
+      padding-bottom: 15px;
+    }
+    ._ipt{
+      width:100%;
+      position: relative;
+      .IptTips{
+
+        position: absolute;
+        line-height: 22px;
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        z-index: 1;
+        transform: scale(1) translate(0px, 0px);
+        transform-origin: left top 0px;
+        pointer-events: none;
+        user-select: none;
+        color: #b8b8b8;
+        cursor: text;
+        font{
+          pointer-events: none;
+          font-size: 16px;
+        }
+      }
+      .IptTips_change{
+
+        transform: scale(0.75) translate(0px, -28px);
+
+        // opacity: 0;
+        // color: rgba(0,0,0,.298039);
+        // transition: all .45s cubic-bezier(.23,1,.32,1) 0ms;
+      }
+      hr{
+        position: absolute;
+        bottom: 2px;
+        margin: 0;
+        height:0;
+        width: 100%;
+        box-sizing: content-box;
+        border-top: none #efefef;
+        border-left: none #efefef;
+        border-right: none #efefef;
+        border-bottom: 3px solid #efefef;
+      }
+      .hr_{
+        border-top: none #13161B;
+        border-left: none #13161B;
+        border-right: none #13161B;
+        border-bottom: 3px solid #13161B;
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      }
+      .hr_change{
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+      .hr_warn{
+        border-top: none #f44336;
+        border-left: none #f44336;
+        border-right: none #f44336;
+        border-bottom: 3px solid #f44336;
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        -o-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      }
+      .ipt{
+        width:100%;
+        height:100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.5em;
+        font-family: 'Roboto', sans-serif;
+        tap-highlight-color: rgba(0,0,0,0);
+        padding-right:40px;
+        color: #13161B;
+      }
+      .warn{
+        position: absolute;
+        bottom: -20px;
+        color: #f44336;
+      }
+      .closeIcon{
+        position: absolute;
+        right:0;
+        top:0;
+        bottom: 0;
+        width: 40px;
+        text-align: center;
+        cursor: pointer;
+        i{
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 16px;
+        }
+      }
+      .closeIcon:after{
+        content: '';
+        display: inline-block;
+        width:0;
+        height:100%;
+        vertical-align: middle;
+      }
+    }
+    .btn{
+      padding: 20px 0;
+      button{
+        width:100%;
+        height:50px;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: #49a9ee;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color linear .2s;
+        position: relative;
+        // border-bottom: 3px solid #007AC1;
+      }
+      button:hover{
+        transition: background-color linear .2s;
+        background-color: #007AC1;
+      }
+    }
+
+
+  }
+  //底部
+  .loginfooter{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    height:60px;
+    line-height:60px;
+    text-align: center;
+    background: rgba(0 ,0 ,0 , .6);
+    color: #fff;
+    font-size: 14px;
+  }
+
+}

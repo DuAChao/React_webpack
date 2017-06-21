@@ -1,0 +1,108 @@
+.entry{
+  box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //bg
+  .index{
+    width:100%;
+    height: -moz-calc(100% - 100px);
+    height: -webkit-calc(100% - 100px);
+    height:calc(100% - 100px);
+    position: relative;
+    z-index:3;
+  }
+  .entrycont{
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: #fff;
+    border-radius: 3px;
+  }
+  .entry_container{
+    position: relative;
+  }
+  .toll_entry{
+    width:120px;
+    height:120px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #4398F4;
+    background: linear-gradient(to bottom, #29d5ff 0%, #026fdd 100%);;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.14);
+    position: relative;
+    z-index:2;
+    cursor: pointer;
+    i{
+      font-size: 34px;
+      line-height: 1.5;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+  .dot{
+    position: absolute;
+    z-index:0;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border: 60px solid rgba(172, 213, 243, 0.22);
+    border-radius: 50%;
+    -webkit-animation: scaleout 1.3s infinite ease-in-out;
+    animation: scaleout 1.3s infinite ease-in-out;
+  }
+
+
+  @-webkit-keyframes scaleout {
+    0% { -webkit-transform: scale(1.0) }
+    100% {
+      -webkit-transform: scale(1.2);
+      opacity: 0;
+    }
+  }
+  @keyframes scaleout {
+    0% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    } 100% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        opacity: 0;
+      }
+  }
+  .icon{
+    display: block;
+    font-size: 36px;
+    line-height:36px;
+    margin: 20px 0;
+  }
+
+
+  //底部
+  .loginfooter{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    height:60px;
+    line-height:60px;
+    text-align: center;
+    background: rgba(0 ,0 ,0 , .6);
+    color: #fff;
+  }
+
+
+
+}
+

@@ -1,0 +1,59 @@
+.MnavBtn{
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.117647) 0 1px 4px;
+  z-index:1000;
+}
+.MnavBtnin{
+  position: relative;
+  width:100%;
+  display: box;
+  display: -moz-box;
+  display: -webkit-box;
+  box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;/*horizontal表横向，vertical表垂直*/
+  background: #fff;
+  a{
+    display: block;
+    height:1rem;
+    width:0;
+    box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    text-align: center;
+    .innernav{
+      display: inline-block;
+      vertical-align: bottom;
+      i{
+        color: #BCC1CC;
+        font-size: 0.48rem;
+        line-height:0.48rem;
+      }
+      span{
+        display: block;
+        font-size: .24rem;
+        color: #BCC1CC;
+      }
+    }
+  }
+  a.active{
+    i{
+      color: #49a9ee;
+    }
+    span{
+      color: #49a9ee;
+    }
+
+  }
+  a:after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width:0;
+    height:100%;
+
+  }
+}

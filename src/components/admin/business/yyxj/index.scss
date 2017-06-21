@@ -1,0 +1,364 @@
+@media screen and (min-width: 1600px){
+
+  .index_cont{
+    .index_right_cont{
+      .businessYyxj_container_common {
+        //卡片
+        .MoneyInfo{
+          padding:20px;
+          height: -moz-calc(100% - 40px);
+          height: -webkit-calc(100% - 40px);
+          height: calc(100% - 40px);
+        }
+        .MoneyInfo-in{
+          .word{
+            .titlemoney{
+              font-size: 30px;
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .MoneyInfo-1{
+          .out{
+            height: 70%;
+          }
+        }
+
+      }
+    }
+  }
+}
+@media screen and (max-width: 1600px){
+
+  .index_cont{
+    .index_right_cont{
+      .businessYyxj_container_common{
+        //卡片
+        .MoneyInfo{
+          padding:20px;
+          height: -moz-calc(100% - 40px);
+          height: -webkit-calc(100% - 40px);
+          height: calc(100% - 40px);
+        }
+        .MoneyInfo-in{
+          .word{
+            .titlemoney{
+              font-size: 30px;
+              margin-bottom: 16px;
+            }
+          }
+        }
+        .MoneyInfo-1{
+          .out{
+            height: 80%;
+          }
+        }
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 1440px){
+
+  .index_cont{
+    .index_right_cont{
+      .businessYyxj_container_common {
+        //卡片
+        .MoneyInfo{
+          padding: 10px 20px;
+          height: -moz-calc(100% - 20px);
+          height: -webkit-calc(100% - 20px);
+          height: calc(100% - 20px);
+        }
+        .MoneyInfo-in{
+          .word{
+            .titlemoney{
+              font-size: 26px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .MoneyInfo-1{
+          .out{
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.index_cont {
+  .index_right_cont{
+    .index_right_cont_container{
+      overflow: hidden;
+      background-color: #dadada;
+      box-sizing: content-box;
+      .businessYyxj_container_common_1{
+        height:-webkit-calc(30% - 42px);
+        height:-moz-calc(30% - 42px);
+        height:calc(30% - 42px);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+      .businessYyxj_container_common_3{
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        height:-webkit-calc(50% - 42px);
+        height:-moz-calc(50% - 42px);
+        height:calc(50% - 42px);
+        padding-top: 42px;
+      }
+
+    }
+    .businessYyxj_container_common{
+      min-width: 1109px;
+      width:100%;
+      height:-webkit-calc(20% - 42px);
+      height:-moz-calc(20% - 42px);
+      height:calc(20% - 42px);
+      background-color: #fff;
+      padding-top:42px;
+      //box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
+      position: relative;
+      box-sizing: content-box;
+      //工具栏
+      .toolbar{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        height: 42px;
+        background: #fff;
+        border-bottom: 1px solid #DADADA;
+        padding: 0 6px;
+        .toolbar_md_1{
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 6px;
+          i{
+            color: #666666;
+            margin-right: 6px;
+          }
+        }
+      }
+      .toolbar:after{
+        content: '';
+        display: inline-block;
+        width:0;
+        height:100%;
+        vertical-align: middle;
+      }
+
+
+      //收费信息
+      .MoneyInfo{
+        width:-webkit-calc(100% - 40px);
+        width:-moz-calc(100% - 40px);
+        width:calc(100% - 40px);
+        box-sizing: content-box;
+      }
+      .MoneyInfo-md-1{
+        float: left;
+        width:33.33%;
+        height:100%;
+        padding: 0 20px;
+      }
+      .MoneyInfo-in{
+        height:100%;
+        margin: 0 auto;
+        font-size: 16px;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.31), 0 0 0 1px rgba(0, 0, 0, 0.11);
+        .MoneyInfo-in-left{
+          width:20%;
+          height:100%;
+          float: left;
+          background: #FE6748;
+          color: #fff;
+          text-align: center;
+        }
+        .MoneyInfo-in-left:after{
+          content: '';
+          display: inline-block;
+          width:0;
+          height:100%;
+          vertical-align: middle;
+        }
+        .word{
+          display: inline-block;
+          line-height:1.5;
+          vertical-align: middle;
+          p{
+            line-height:1.5;
+            span{
+              margin: 0 6px;
+            }
+          }
+          .titlemoney{
+            i{
+              vertical-align: text-top;
+            }
+            span{
+              word-wrap: break-word
+            }
+          }
+        }
+        .MoneyInfo-in-right{
+          width:80%;
+          height:100%;
+          float: left;
+          background: #FF815B;
+          color: #fff;
+          text-align: center;
+          overflow: hidden;
+          position: relative;
+          i.bgicon{
+            position: absolute;
+            right:4px;
+            bottom: 4px;
+            font-size: 100px;
+            line-height:100px;
+            color: rgba(221, 221, 221, 0.16);
+          }
+        }
+        .MoneyInfo-in-right:after{
+          content: '';
+          display: inline-block;
+          width:0;
+          height:100%;
+          vertical-align: middle;
+        }
+      }
+      .MoneyInfo-1{
+        padding:0 20px;
+        width:-webkit-calc(100% - 40px);
+        width:-moz-calc(100% - 40px);
+        width:calc(100% - 40px);
+        height:100%;
+        box-sizing: content-box;
+        text-align: center;
+        .out{
+          display: inline-block;
+          vertical-align: middle;
+          width:88%;
+          margin: 0 auto;
+          position: relative;
+          box-sizing: content-box;
+        }
+        .out:after{
+          position:absolute;
+          content: '';
+          top:0;
+          left:0;
+          right:0;
+          bottom: 0;
+          width:100%;
+          height:100%;
+          border: 1px solid #cccccc;
+          border-radius: 3px;
+        }
+        .out-md-1{
+          width:33.33%;
+          height:100%;
+          float: left;
+          position: relative;
+          .inner{
+            position: absolute;
+            top:50%;
+            left:12px;
+            -webkit-transform: translate(0,-50%);
+            -moz-transform: translate(0,-50%);
+            -o-transform: translate(0,-50%);
+            transform: translate(0,-50%);
+          }
+          .common_{
+            float: left;
+            p{
+              color: #a0a0a0;
+              font-size: 16px;
+              line-height:1.5;
+            }
+            .num{
+              font-size: 26px;
+              color: #f08184;
+            }
+            .Transfernum{
+              font-size: 26px;
+              color: #F8B368;
+            }
+            .totalnum{
+              font-size: 26px;
+              color: #35ACD6;
+            }
+          }
+          .icon-out{
+            width:60px;
+            height:60px;
+            border-radius: 50%;
+            text-align: center;
+            i{
+              color: #fff;
+              font-size: 30px;
+              line-height:30px;
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+          .common_:after{
+            content: '';
+            display: inline-block;
+            height:100%;
+            width:0;
+            vertical-align: middle;
+          }
+          .cash{
+            background: #F08184;
+          }
+          .Transfer{
+            background: #F8B368;
+          }
+          .total{
+            background: #35ACD6;
+          }
+          .word{
+            height:60px;
+            margin-left:12px
+          }
+          .word_{
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .out-md-1:after{
+          position: absolute;
+          content: '';
+          top:0;
+          right:0;
+          bottom: 0;
+          width:0;
+          height:100%;
+          border-right: 1px dashed #cccccc;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .out-md-1:nth-child(3):after{
+          border-right: 1px dashed transparent;
+        }
+      }
+      .MoneyInfo-1:after{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width:0;
+        height:100%;
+      }
+      //图表
+      .chart{
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+}

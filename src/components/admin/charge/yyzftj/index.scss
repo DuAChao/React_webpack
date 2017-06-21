@@ -1,0 +1,93 @@
+@media screen and (min-width: 1600px){
+
+  .index_cont {
+    .index_right_cont {
+      .UserRecordOut{
+        padding: 12px;
+        .UserRecorin{
+          padding: 12px;
+        }
+        .bd{
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.17);
+          position: relative;
+        }
+        .bd:after{
+          content: '';
+          position: absolute;
+          right:0;
+          top:0;
+          bottom: 0;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width: 1600px){
+
+  .index_cont {
+    .index_right_cont {
+      .UserRecordOut{
+        padding: 12px;
+        .UserRecorin{
+          padding: 12px;
+        }
+        .bd{
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.17);
+          position: relative;
+        }
+        .bd:after{
+          content: '';
+          position: absolute;
+          right:0;
+          top:0;
+          bottom: 0;
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px){
+  .index_cont {
+    .index_right_cont {
+      .UserRecordOut{
+        padding: 0;
+        .UserRecorin{
+          padding: 0;
+        }
+        .bd{
+          box-shadow: none;
+          position: relative;
+        }
+        .bd:after{
+          content: '';
+          position: absolute;
+          right:0;
+          top:0;
+          bottom: 0;
+          border-right: 1px solid #e5e5e5;
+        }
+        .UserRecorTree{
+          min-width: 232px;
+        }
+      }
+    }
+  }
+}
+
+.index_cont {
+  .index_right_cont{
+    .UserSChargeYyzftjOut{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      height: -webkit-calc(100% - 42px);
+      height: -moz-calc(100% - 42px);
+      height: calc(100% - 42px);
+    }
+  }
+}

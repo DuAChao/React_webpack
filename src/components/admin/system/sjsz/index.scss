@@ -1,0 +1,121 @@
+@media screen and (min-width: 1600px){
+
+  .index_cont {
+    .index_right_cont {
+      .bumenOut{
+        padding: 12px;
+        .bumenin{
+          padding: 12px;
+        }
+        .bd{
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.17);
+          position: relative;
+        }
+        .bd:after{
+          content: '';
+          position: absolute;
+          right:0;
+          top:0;
+          bottom: 0;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width: 1600px){
+
+  .index_cont {
+    .index_right_cont {
+      .bumenOut{
+        padding: 12px;
+        .bumenin{
+          padding: 12px;
+        }
+        .bd{
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.17);
+          position: relative;
+        }
+        .bd:after{
+          content: '';
+          position: absolute;
+          right:0;
+          top:0;
+          bottom: 0;
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px){
+  .index_cont {
+    .index_right_cont {
+      .bumenOut{
+        padding: 0;
+        .bumenin{
+          padding: 0;
+        }
+        .bd{
+          box-shadow: none;
+          position: relative;
+        }
+        .bd:after{
+          content: '';
+          position: absolute;
+          right:0;
+          top:0;
+          bottom: 0;
+          border-right: 1px solid #e5e5e5;
+        }
+        .bumenTree{
+          min-width: 232px;
+        }
+      }
+    }
+  }
+}
+
+.index_cont {
+  .index_right_cont {
+    .index_right_cont_inner {
+      .index_right_cont_container {
+        .SystemSjsz{
+          .RightContainer{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.index_cont {
+  .index_right_cont{
+    .SystemSjszOut{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      height: -webkit-calc(100% - 42px);
+      height: -moz-calc(100% - 42px);
+      height: calc(100% - 42px);
+      .bumenin{
+        height:100%;
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .bumenTable{
+        width:100%;
+        .cont{
+          height: 100%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

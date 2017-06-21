@@ -1,0 +1,135 @@
+@media screen and (min-width: 960px){
+  body{
+    min-height: 644px;
+  }
+}
+/**定义公共部分常用属性*/
+
+/**字体*/
+$fontFamily:"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+$fontColor:#666;
+
+
+
+/*点击输入框的瞬间会出现灰色背景*/
+html *{
+  outline: 0;
+  -webkit-text-size-adjust: none;/*解决chrome浏览器下字体不能小于12px*/
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/**禁止移动端长按复制粘贴 注：input 输入框要解除，不然输入不了文字 */
+*{   
+    -webkit-touch-callout:none;  /*系统默认菜单被禁用*/   
+    -webkit-user-select:none; /*webkit浏览器*/   
+    -khtml-user-select:none; /*早期浏览器*/   
+    -moz-user-select:none;/*火狐*/   
+    -ms-user-select:none; /*IE10*/   
+    user-select:none;   
+}  
+html,body{-webkit-overflow-scrolling: touch;}
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, textarea, th, td, form, a, p, textarea{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow: hidden;
+  visibility: visible;
+  font-size:14px;
+  color:$fontColor;
+  font-family:$fontFamily;
+  height:100%;
+  //让字体看起来平滑
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+input{
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-user-select:auto; /*webkit浏览器*/   
+  -khtml-user-select:auto; /*早期浏览器*/   
+  -moz-user-select:auto;/*火狐*/   
+  -ms-user-select:auto; /*IE10*/   
+  user-select:auto;   
+}
+textarea{
+  -webkit-user-select:auto; /*webkit浏览器*/   
+  -khtml-user-select:auto; /*早期浏览器*/   
+  -moz-user-select:auto;/*火狐*/   
+  -ms-user-select:auto; /*IE10*/   
+  user-select:auto;  
+}
+span, p, div{
+  -webkit-user-select:auto; /*webkit浏览器*/
+  -khtml-user-select:auto; /*早期浏览器*/
+  -moz-user-select:auto;/*火狐*/
+  -ms-user-select:auto; /*IE10*/
+  user-select:auto;
+}
+/*所用的input的占位符placeholder的字体颜色*/
+input::-webkit-input-placeholder{
+  color:#aaa;
+}
+input:focus::-webkit-input-placeholder{color: #c3c3c3;}
+button{
+  border: none;
+  outline: none;
+}
+input[type="submit"],input[type="reset"],input[type="button"],input[type=date],button,select{
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari 和 Chrome */
+  appearance:none;
+  /*去掉苹果的默认UI来渲染按钮 、解决部分手机浏览器对border：none无效办法*/
+}
+//[type=text]{
+//  line-height: 1.5;
+//  margin-bottom: 1em;
+//  padding: .5em;
+//  color: #777;
+//  border: .08em solid rgba(0,0,0,.1);
+//  background-color: #fff;
+//  border-radius: .5em 0 0 .5em;
+//}
+//[type=text]:hover{
+//  border: .08em solid rgba(0,0,0,.6);
+//}
+//[type=text], button {
+//  font-size: 1.125em;
+//  outline: 0;
+//  -webkit-transition: border-color .3s;
+//  transition: border-color .3s;
+//}
+a {
+  color: #8C8C8C;
+  text-decoration: none;
+}
+img{
+  border: 0;
+  outline: 0;
+}
+
+::-moz-selection{
+  background: #acd5f3;
+  color: #108ee9;
+}
+::selection {
+  background: #acd5f3;
+  color: #108ee9;
+}
+/*IE下清除浮动*/
+.clearfloat {
+  zoom:1;
+}
+/*其他浏览器清除浮动*/
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}

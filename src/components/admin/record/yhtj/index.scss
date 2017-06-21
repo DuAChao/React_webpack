@@ -1,0 +1,77 @@
+.index_cont .index_right_cont .index_right_cont_inner .index_right_cont_container{
+    .TotalList{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: none!important;
+    background-color: #f6f6f6!important;
+    .TotalList-col{
+      width: 25%;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+    .comIn{
+      padding: 6px;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .comIn::after{
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 100%;
+    }
+    .TotalInfo{
+      display: inline-block;
+      vertical-align: middle;
+      color: #fff;
+      .TitleName{
+        font-size: 14px;
+      }
+      .num{
+        font-size: 34px;
+      }
+    }
+    .color1{
+      background-color: #FF815B!important;
+    }
+    .color2{
+      background-color: #50C195!important;
+    }
+    .color3{
+      background-color: #9C8CB9!important;
+    }
+    .color4{
+      background-color: #35ACD6!important;
+    }
+    .iconOut{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-right: 6px;
+      transform: translate(0,-50%);
+      color: #fff;
+      .iconfont {
+        font-size: 52px;
+      }
+    }
+  }
+  .YhtjChart{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: none!important;
+    background-color: #f6f6f6!important;
+    .LeftLine{
+      width: 50%;
+      height: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+    .RightPie{
+      width: 50%;
+      height: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+  }
+}
