@@ -1,3 +1,6 @@
+$ npm install
+
+$ npm start
 
 WEB端系统管理软件整体采用 “单页设计，按需加载” 。
 
@@ -9,7 +12,7 @@ WEB端系统管理软件整体采用 “单页设计，按需加载” 。
 
     4、使用react-router处理前端路由。
 
-    5、使用flux框架管理数据流。
+    5、使用redux框架管理数据流。
 
     6、使用webpack打包，以及koa开发服务器进行前端分离开发。
 
@@ -19,7 +22,7 @@ WEB端系统管理软件整体采用 “单页设计，按需加载” 。
 
      ==> webpack：@1.13.1
 
-     ==> flux：@3.1.2
+     ==> redux：@3.6.0
 
      ==> 图标：iconfont ==> http://www.iconfont.cn/
 
@@ -32,5 +35,7 @@ WEB端系统管理软件整体采用 “单页设计，按需加载” 。
     
         libraryName: 'antd',
         style: 'css'  // if true, use less
+        
+    
      
      
