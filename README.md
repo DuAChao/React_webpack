@@ -49,11 +49,11 @@ npm run build (打包)
 
 ### 登录页
 
-<img src="https://github.com/DuAChao/React_webpack/blob/master/screenshots/login.png" width="704" height="561"/> 
+<img src="https://github.com/DuAChao/React_webpack/blob/master/screenshots/login.png" width="800" height="396"/> 
 
 ### 主页
 
-<img src="https://github.com/DuAChao/React_webpack/blob/master/screenshots/index.png" width="704" height="561"/> 
+<img src="https://github.com/DuAChao/React_webpack/blob/master/screenshots/index.png" width="800" height="396"/> 
         
     
      
